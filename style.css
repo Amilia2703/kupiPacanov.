@@ -1,0 +1,39 @@
+body{
+    background-color: antiquewhite;
+}
+#name_shop{
+    margin: 50px 0;
+    text-align: center;
+}
+.card{
+    background-color: rgb(112, 112, 112);
+    width: 250px;
+    height: 350px;
+    margin: 0 50px;
+    margin-bottom: 50px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    color: white;
+}
+.title{
+    padding: 10px 20px;
+    border: 3px solid white;
+    border-radius: 5px;
+    text-align: center;
+}
+img{
+    width: 100%;
+    height :60%;
+}
+.price{
+    text-align: center;
+    border-top: 3px solid white;
+}
+.product_field{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

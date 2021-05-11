@@ -1,12 +1,12 @@
 body{
-    background-color: antiquewhite;
+    background-color: rgb(137, 205, 236);
 }
 #name_shop{
     margin: 50px 0;
     text-align: center;
 }
 .card{
-    background-color: rgb(112, 112, 112);
+    background-color: rgb(211, 248, 45);
     width: 250px;
     height: 350px;
     margin: 0 50px;
@@ -14,7 +14,7 @@ body{
     border: 2px solid black;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .title{
     padding: 10px 20px;
@@ -36,4 +36,12 @@ img{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+.date{
+    color: rgb(136, 25, 25);
+    font-size: 100px;
+    text-align:center;
+}
+.name_shop{
+     color:rgb(118, 118, 202) ;
 }

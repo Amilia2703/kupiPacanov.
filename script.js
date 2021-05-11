@@ -1,4 +1,12 @@
 window.onload = function(){
+    function showDate(){
+    var  str = '';
+    var now = new Date();
+    str = now.toLocaleTimeString();
+    document.querySelector('.date').innerHTML = str;
+    }
+    showDate()
+    setInterval(showDate, 1000);
     $.getJSON("https://spreadsheets.google.com/feeds/list/1Kz3odiTXIbWoEq7PR4GIhLeyeT0RdoNqL7FOcYH8IZg/od6/public/values?alt=json",
         function (data) {
             console.log(data);
@@ -16,9 +24,13 @@ window.onload = function(){
              out += `<h3 class="title">${data[i]['gsx$name']['$t']}</h3>`;
              out += `<img src="${data[i]['gsx$image']['$t']}"`;
              out += `<p class="price">Цена: ${data[i]['gsx$price']['$t']}</p>`;
+             out += ` <button name="add_to_cart" data="${data[i]['gsx$article_2']['$t']}">Покупайте лошары,а то мои друзья из чечни придут морду вам набьют!!!</button>;`
              out += `</div>;`
         }
         document.querySelector('.product_field').innerHTML = out;
         // $('.product_field').html(out);
+    }
+    document.onclick = function(e){
+        console.log(e.target.attributes.name.nodeValue,e.target.attributes.data.nodeValue);
     }
 }
